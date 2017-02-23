@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8231C4D71E5E7AEF00116950 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4D61E5E7AEF00116950 /* TwoViewController.m */; };
+		8231C4DA1E5E914200116950 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4D91E5E914200116950 /* LoginViewController.m */; };
+		8231C4E01E5E918F00116950 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4DF1E5E918F00116950 /* LoginViewModel.m */; };
+		8231C4E31E5E91DA00116950 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4E21E5E91DA00116950 /* Account.m */; };
+		8231C4E61E5EAA4F00116950 /* RTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4E51E5EAA4F00116950 /* RTableViewController.m */; };
+		82ABB9D01E540677004F50D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ABB9CF1E540677004F50D3 /* main.m */; };
+		82ABB9D31E540677004F50D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ABB9D21E540677004F50D3 /* AppDelegate.m */; };
+		82ABB9D61E540677004F50D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ABB9D51E540677004F50D3 /* ViewController.m */; };
+		82ABB9D91E540677004F50D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82ABB9D71E540677004F50D3 /* Main.storyboard */; };
+		82ABB9DB1E540677004F50D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82ABB9DA1E540677004F50D3 /* Assets.xcassets */; };
+		82ABB9DE1E540677004F50D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82ABB9DC1E540677004F50D3 /* LaunchScreen.storyboard */; };
+		82ABB9F61E54068B004F50D3 /* RBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ABB9EC1E54068B004F50D3 /* RBaseViewController.m */; };
+		82ABB9F71E54068B004F50D3 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ABB9EE1E54068B004F50D3 /* OneViewController.m */; };
+		8BE14964F1A702524E7DFCF8 /* Pods_RAC_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F54390AD7413268687A755 /* Pods_RAC_OC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34E8C940780B2BE8AFEA1EB5 /* Pods-RAC-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC-OC/Pods-RAC-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		45F54390AD7413268687A755 /* Pods_RAC_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8231C4D51E5E7AEF00116950 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		8231C4D61E5E7AEF00116950 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		8231C4D81E5E914200116950 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8231C4D91E5E914200116950 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8231C4DE1E5E918F00116950 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		8231C4DF1E5E918F00116950 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		8231C4E11E5E91DA00116950 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		8231C4E21E5E91DA00116950 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		8231C4E41E5EAA4F00116950 /* RTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTableViewController.h; sourceTree = "<group>"; };
+		8231C4E51E5EAA4F00116950 /* RTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTableViewController.m; sourceTree = "<group>"; };
+		82ABB9CB1E540677004F50D3 /* RAC-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82ABB9CF1E540677004F50D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82ABB9D11E540677004F50D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		82ABB9D21E540677004F50D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		82ABB9D41E540677004F50D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		82ABB9D51E540677004F50D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
+		82ABB9D81E540677004F50D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82ABB9DA1E540677004F50D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82ABB9DD1E540677004F50D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82ABB9DF1E540677004F50D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82ABB9EB1E54068B004F50D3 /* RBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBaseViewController.h; sourceTree = "<group>"; };
+		82ABB9EC1E54068B004F50D3 /* RBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBaseViewController.m; sourceTree = "<group>"; };
+		82ABB9ED1E54068B004F50D3 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		82ABB9EE1E54068B004F50D3 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		D1EC41E6A249CA7246EC848F /* Pods-RAC-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC-OC/Pods-RAC-OC.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82ABB9C81E540677004F50D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE14964F1A702524E7DFCF8 /* Pods_RAC_OC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82ABB9C21E540677004F50D3 = {
+			isa = PBXGroup;
+			children = (
+				82ABB9CD1E540677004F50D3 /* RAC-OC */,
+				82ABB9CC1E540677004F50D3 /* Products */,
+				E0407B1767ED70396DC75403 /* Pods */,
+				D417020B9B512BD21049B731 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82ABB9CC1E540677004F50D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9CB1E540677004F50D3 /* RAC-OC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82ABB9CD1E540677004F50D3 /* RAC-OC */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9E51E54068B004F50D3 /* Models */,
+				82ABB9E71E54068B004F50D3 /* Resources */,
+				82ABB9E81E54068B004F50D3 /* ViewControllers */,
+				82ABB9F21E54068B004F50D3 /* ViewModels */,
+				82ABB9F41E54068B004F50D3 /* Views */,
+				82ABB9DA1E540677004F50D3 /* Assets.xcassets */,
+				82ABB9DF1E540677004F50D3 /* Info.plist */,
+				82ABB9CE1E540677004F50D3 /* Supporting Files */,
+			);
+			path = "RAC-OC";
+			sourceTree = "<group>";
+		};
+		82ABB9CE1E540677004F50D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9CF1E540677004F50D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82ABB9E51E54068B004F50D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9E61E54068B004F50D3 /* BaseModels */,
+				8231C4E11E5E91DA00116950 /* Account.h */,
+				8231C4E21E5E91DA00116950 /* Account.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82ABB9E61E54068B004F50D3 /* BaseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModels;
+			sourceTree = "<group>";
+		};
+		82ABB9E71E54068B004F50D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82ABB9E81E54068B004F50D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9F01E54068B004F50D3 /* StoryBoards */,
+				82ABB9E91E54068B004F50D3 /* AppDelegates */,
+				82ABB9EA1E54068B004F50D3 /* BaseViewControllers */,
+				82ABB9ED1E54068B004F50D3 /* OneViewController.h */,
+				82ABB9EE1E54068B004F50D3 /* OneViewController.m */,
+				8231C4D51E5E7AEF00116950 /* TwoViewController.h */,
+				8231C4D61E5E7AEF00116950 /* TwoViewController.m */,
+				8231C4D81E5E914200116950 /* LoginViewController.h */,
+				8231C4D91E5E914200116950 /* LoginViewController.m */,
+				8231C4E41E5EAA4F00116950 /* RTableViewController.h */,
+				8231C4E51E5EAA4F00116950 /* RTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		82ABB9E91E54068B004F50D3 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9D11E540677004F50D3 /* AppDelegate.h */,
+				82ABB9D21E540677004F50D3 /* AppDelegate.m */,
+				82ABB9D41E540677004F50D3 /* ViewController.h */,
+				82ABB9D51E540677004F50D3 /* ViewController.m */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		82ABB9EA1E54068B004F50D3 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9EB1E54068B004F50D3 /* RBaseViewController.h */,
+				82ABB9EC1E54068B004F50D3 /* RBaseViewController.m */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		82ABB9F01E54068B004F50D3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9D71E540677004F50D3 /* Main.storyboard */,
+				82ABB9DC1E540677004F50D3 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		82ABB9F21E54068B004F50D3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9F31E54068B004F50D3 /* BaseViewModels */,
+				8231C4DE1E5E918F00116950 /* LoginViewModel.h */,
+				8231C4DF1E5E918F00116950 /* LoginViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82ABB9F31E54068B004F50D3 /* BaseViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseViewModels;
+			sourceTree = "<group>";
+		};
+		82ABB9F41E54068B004F50D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82ABB9F51E54068B004F50D3 /* BaseViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82ABB9F51E54068B004F50D3 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		D417020B9B512BD21049B731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F54390AD7413268687A755 /* Pods_RAC_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0407B1767ED70396DC75403 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E8C940780B2BE8AFEA1EB5 /* Pods-RAC-OC.debug.xcconfig */,
+				D1EC41E6A249CA7246EC848F /* Pods-RAC-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82ABB9CA1E540677004F50D3 /* RAC-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82ABB9E21E540677004F50D3 /* Build configuration list for PBXNativeTarget "RAC-OC" */;
+			buildPhases = (
+				67F4532643E0917FD04A6590 /* [CP] Check Pods Manifest.lock */,
+				82ABB9C71E540677004F50D3 /* Sources */,
+				82ABB9C81E540677004F50D3 /* Frameworks */,
+				82ABB9C91E540677004F50D3 /* Resources */,
+				A5B296F9694C013921501133 /* [CP] Embed Pods Frameworks */,
+				FA53979D8056568252A243EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RAC-OC";
+			productName = "RAC-OC";
+			productReference = 82ABB9CB1E540677004F50D3 /* RAC-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82ABB9C31E540677004F50D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = RogueAndy;
+				TargetAttributes = {
+					82ABB9CA1E540677004F50D3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZBB923YFHM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 82ABB9C61E540677004F50D3 /* Build configuration list for PBXProject "RAC-OC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82ABB9C21E540677004F50D3;
+			productRefGroup = 82ABB9CC1E540677004F50D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82ABB9CA1E540677004F50D3 /* RAC-OC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82ABB9C91E540677004F50D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82ABB9DE1E540677004F50D3 /* LaunchScreen.storyboard in Resources */,
+				82ABB9DB1E540677004F50D3 /* Assets.xcassets in Resources */,
+				82ABB9D91E540677004F50D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67F4532643E0917FD04A6590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B296F9694C013921501133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC-OC/Pods-RAC-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA53979D8056568252A243EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC-OC/Pods-RAC-OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82ABB9C71E540677004F50D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8231C4E61E5EAA4F00116950 /* RTableViewController.m in Sources */,
+				8231C4E31E5E91DA00116950 /* Account.m in Sources */,
+				8231C4E01E5E918F00116950 /* LoginViewModel.m in Sources */,
+				82ABB9F61E54068B004F50D3 /* RBaseViewController.m in Sources */,
+				82ABB9F71E54068B004F50D3 /* OneViewController.m in Sources */,
+				82ABB9D61E540677004F50D3 /* ViewController.m in Sources */,
+				8231C4D71E5E7AEF00116950 /* TwoViewController.m in Sources */,
+				8231C4DA1E5E914200116950 /* LoginViewController.m in Sources */,
+				82ABB9D31E540677004F50D3 /* AppDelegate.m in Sources */,
+				82ABB9D01E540677004F50D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82ABB9D71E540677004F50D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82ABB9D81E540677004F50D3 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		82ABB9DC1E540677004F50D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82ABB9DD1E540677004F50D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82ABB9E01E540677004F50D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82ABB9E11E540677004F50D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82ABB9E31E540677004F50D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E8C940780B2BE8AFEA1EB5 /* Pods-RAC-OC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBB923YFHM;
+				INFOPLIST_FILE = "RAC-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rogue.andy.RAC-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82ABB9E41E540677004F50D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EC41E6A249CA7246EC848F /* Pods-RAC-OC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZBB923YFHM;
+				INFOPLIST_FILE = "RAC-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rogue.andy.RAC-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82ABB9C61E540677004F50D3 /* Build configuration list for PBXProject "RAC-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82ABB9E01E540677004F50D3 /* Debug */,
+				82ABB9E11E540677004F50D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82ABB9E21E540677004F50D3 /* Build configuration list for PBXNativeTarget "RAC-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82ABB9E31E540677004F50D3 /* Debug */,
+				82ABB9E41E540677004F50D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82ABB9C31E540677004F50D3 /* Project object */;
+}
