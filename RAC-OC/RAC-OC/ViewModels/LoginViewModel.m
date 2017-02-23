@@ -10,6 +10,12 @@
 #import "ReactiveCocoa.h"
 #import "MBProgressHUD.h"
 
+@interface LoginViewModel()
+
+@property (nonatomic, strong) NSString *testString;
+
+@end
+
 @implementation LoginViewModel
 
 - (Account *)account {
@@ -64,6 +70,7 @@
     }];
     
     [[_loginCommand.executing skip:1] subscribeNext:^(id x) {
+        
         if([x isEqualToNumber:@(YES)]) {
             
             NSLog(@"-----正在登录,,,");

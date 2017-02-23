@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "OneViewController.h"
 #import "LoginViewController.h"
+#import "RTableViewController.h"
+#import "TwoViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[TwoViewController new]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     

@@ -50,8 +50,9 @@
     RAC(self.loginViewModel.account, pwd) = _pawdField.rac_textSignal;
     RAC(self.loginBtn, enabled) = self.loginViewModel.enableLoginSignal;
     
+    @weakify(self);
     [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        NSLog(@"哈哈哈哈哈或");
+        @strongify(self);
         [self.loginViewModel.loginCommand execute:nil];
     }];
 }
@@ -79,6 +80,12 @@
     [self.view addSubview:self.accountField];
     [self.view addSubview:self.pawdField];
     [self.view addSubview:self.loginBtn];
+}
+
+- (void)dealloc {
+
+    NSLog(@"-----------------------LoginViewController");
+
 }
 
 @end

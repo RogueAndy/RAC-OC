@@ -8,6 +8,7 @@
 
 #import "TwoViewController.h"
 #import "ReactiveCocoa.h"
+#import "RTableViewController.h"
 
 @interface TwoViewController ()
 
@@ -30,11 +31,8 @@
 
 - (void)notice:(UIButton *)sender {
 
-    if(self.delegateSignal) {
-    
-        [self.delegateSignal sendNext:@3];
-    
-    }
+    RTableViewController *vc = [[RTableViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 
 }
 

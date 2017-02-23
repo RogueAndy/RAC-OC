@@ -52,7 +52,7 @@
     }];
     [self.view addSubview:sender];
 
-    [self method5];
+    [self method3];
     
 }
 
