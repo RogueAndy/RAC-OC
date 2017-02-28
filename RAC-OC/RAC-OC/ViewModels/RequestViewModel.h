@@ -11,7 +11,7 @@
 
 @class RACCommand;
 
-@interface RequestViewModel : NSObject<UITableViewDataSource>
+@interface RequestViewModel : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong, readonly) RACCommand *requestCommand;
 

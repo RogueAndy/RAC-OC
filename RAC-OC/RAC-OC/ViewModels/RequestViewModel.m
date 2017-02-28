@@ -42,7 +42,6 @@
               parameters:parameters
                 progress:nil
                  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//                     NSLog(@"%@", responseObject);
                      NSLog(@"---- sendNext");
                      [subscriber sendNext:responseObject];
                      [subscriber sendCompleted];
@@ -90,6 +89,12 @@
     cell.subLabel.text = book.subtitle;
     cell.titLabel.text = book.title;
     return cell;
+
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return 80;
 
 }
 

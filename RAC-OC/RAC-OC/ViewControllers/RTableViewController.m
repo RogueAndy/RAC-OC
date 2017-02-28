@@ -54,6 +54,7 @@
     
     self.table = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.table.dataSource = self.requestViewModel;
+    self.table.delegate = self.requestViewModel;
     [self.view addSubview:self.table];
     
     RACSignal *requestSignal = [self.requestViewModel.requestCommand execute:nil];
