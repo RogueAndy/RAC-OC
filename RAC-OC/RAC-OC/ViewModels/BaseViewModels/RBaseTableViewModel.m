@@ -32,11 +32,9 @@
         RACSignal *requestSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             NSLog(@"------------- requestSignal");
             
-            NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-            parameters[@"q"] = @"基础";
             AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
             [manager GET:@"https://api.douban.com/v2/book/search"
-              parameters:parameters
+              parameters:self.netParameters
                 progress:nil
                  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                      NSLog(@"------------ sendNext");
