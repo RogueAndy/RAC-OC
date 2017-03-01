@@ -6,12 +6,12 @@
 //  Copyright © 2017年 RogueAndy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RBaseTableViewCell.h"
 
-@interface RTableViewCell : UITableViewCell
+@interface RTableViewCell : RBaseTableViewCell
 
-@property (nonatomic, strong) UILabel *subLabel;
+@property (nonatomic, strong, readonly) UILabel *subLabel;
 
-@property (nonatomic, strong) UILabel *titLabel;
+@property (nonatomic, strong, readonly) UILabel *titLabel;
 
 @end

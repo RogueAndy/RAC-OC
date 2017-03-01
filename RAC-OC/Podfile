@@ -7,6 +7,7 @@ pod 'Masonry', '~> 1.0.2'
 pod 'ReactiveCocoa', '~> 4.0.2-alpha-1'
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'AFNetworking', '~> 3.1.0'
+pod 'MJRefresh', '~> 3.1.12'
 
 use_frameworks!
 

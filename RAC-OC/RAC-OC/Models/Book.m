@@ -10,8 +10,8 @@
 
 @implementation Book
 
-+ (instancetype)bookWithDict:(id)value {
-
++ (instancetype)modelWithDict:(id)value {
+    
     Book *book = [[Book alloc] init];
     book.subtitle = value[@"subtitle"];
     book.title = value[@"title"];

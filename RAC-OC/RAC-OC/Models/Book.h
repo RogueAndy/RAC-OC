@@ -6,14 +6,12 @@
 //  Copyright © 2017年 RogueAndy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "RBaseModel.h"
 
-@interface Book : NSObject
+@interface Book : RBaseModel
 
 @property (nonatomic, strong) NSString *subtitle;
 
 @property (nonatomic, strong) NSString *title;
-
-+ (instancetype)bookWithDict:(id)value;
 
 @end

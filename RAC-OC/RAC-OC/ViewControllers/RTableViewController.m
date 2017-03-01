@@ -10,12 +10,15 @@
 #import "ReactiveCocoa.h"
 #import "LoginViewController.h"
 #import "RequestViewModel.h"
+#import "MJRefresh.h"
 
 @interface RTableViewController ()
 
 @property (nonatomic, strong) UITableView *table;
 
 @property (nonatomic, strong) RequestViewModel *requestViewModel;
+
+@property (nonatomic, strong) RACSignal *requestSignal;
 
 @end
 
@@ -42,26 +45,35 @@
 }
 
 - (void)loadBaseView {
-
-//    UIButton *sender = [UIButton buttonWithType:UIButtonTypeCustom];
-//    sender.frame = CGRectMake(40, 200, self.view.frame.size.width - 80, 40);
-//    sender.backgroundColor = [UIColor redColor];
-//    [[sender rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-//        LoginViewController *login = [[LoginViewController alloc] init];
-//        [self.navigationController pushViewController:login animated:YES];
-//    }];
-//    [self.view addSubview:sender];
     
     self.table = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.table.dataSource = self.requestViewModel;
     self.table.delegate = self.requestViewModel;
     [self.view addSubview:self.table];
     
-    RACSignal *requestSignal = [self.requestViewModel.requestCommand execute:nil];
-    [requestSignal subscribeNext:^(NSArray *x) {
-        NSLog(@"----%lu", (unsigned long)x.count);
-        self.requestViewModel.models = x;
-        [self.table reloadData];
+    @weakify(self);
+    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        @strongify(self);
+        self.requestSignal = [self.requestViewModel.requestCommand execute:nil];
+        [self.requestSignal subscribeNext:^(NSArray *x) {
+            self.requestViewModel.models = [x mutableCopy];
+            [self.table reloadData];
+            [self.table.mj_header endRefreshing];
+        }];
+        
+    }];
+    [self.table.mj_header beginRefreshing];
+    
+    self.table.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        
+        @strongify(self);
+        self.requestSignal = [self.requestViewModel.requestCommand execute:nil];
+        [self.requestSignal subscribeNext:^(NSArray *x) {
+            [self.requestViewModel.models addObjectsFromArray:x];
+            [self.table reloadData];
+            [self.table.mj_footer endRefreshing];
+        }];
     }];
 
 }

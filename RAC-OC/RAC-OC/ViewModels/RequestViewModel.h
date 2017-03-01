@@ -6,15 +6,8 @@
 //  Copyright © 2017年 RogueAndy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "RBaseTableViewModel.h"
 
-@class RACCommand;
-
-@interface RequestViewModel : NSObject<UITableViewDataSource, UITableViewDelegate>
-
-@property (nonatomic, strong, readonly) RACCommand *requestCommand;
-
-@property (nonatomic, strong) NSArray *models;
+@interface RequestViewModel : RBaseTableViewModel
 
 @end
