@@ -32,8 +32,8 @@
 
 - (void)notice:(UIButton *)sender {
 
-//    RTableViewController *vc = [[RTableViewController alloc] init];
-    LoginViewController *vc = [[LoginViewController alloc] init];
+    RTableViewController *vc = [[RTableViewController alloc] init];
+//    LoginViewController *vc = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 
 }

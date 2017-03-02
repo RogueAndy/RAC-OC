@@ -10,6 +10,15 @@
 #import "ReactiveCocoa.h"
 #import "AFNetWorking.h"
 #import "RBaseTableViewCell.h"
+#import "MJRefresh.h"
+
+@interface RBaseTableViewModel()
+
+@property (nonatomic, assign) NSInteger countRefresh;
+
+@property (nonatomic, strong) NSArray *select_parameters;
+
+@end
 
 @implementation RBaseTableViewModel
 
@@ -27,6 +36,8 @@
 
 - (void)initialBind {
 
+    _countRefresh = 0;
+    _select_parameters = @[@"阿", @"波", @"吃", @"对", @"恶", @"发", @"给", @"话", @"家"];
     _requestCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
 
         RACSignal *requestSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
@@ -89,6 +100,52 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     return 75;
+
+}
+
+- (void)setHeadLoading:(BOOL)headLoading {
+
+    _headLoading = headLoading;
+    [self.table.mj_header beginRefreshing];
+
+}
+
+- (void)setFooterLoading:(BOOL)footerLoading {
+
+    _footerLoading = footerLoading;
+    [self.table.mj_footer beginRefreshing];
+
+}
+
+- (void)setTable:(UITableView *)table {
+
+    _table = table;
+    
+    @weakify(self);
+    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        @strongify(self);
+        self.countRefresh = 0;
+        self.netParameters = [@{@"q": self.select_parameters[self.countRefresh]} mutableCopy];
+        [[self.requestCommand execute:nil] subscribeNext:^(NSArray *x) {
+            self.models = [x mutableCopy];
+            [self.table reloadData];
+            [self.table.mj_header endRefreshing];
+        }];
+        
+    }];
+    
+    self.table.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        
+        @strongify(self);
+        self.countRefresh += 1;
+        self.netParameters = [@{@"q": self.select_parameters[self.countRefresh]} mutableCopy];
+        [[self.requestCommand execute:nil] subscribeNext:^(NSArray *x) {
+            [self.models addObjectsFromArray:x];
+            [self.table reloadData];
+            [self.table.mj_footer endRefreshing];
+        }];
+    }];
 
 }
 

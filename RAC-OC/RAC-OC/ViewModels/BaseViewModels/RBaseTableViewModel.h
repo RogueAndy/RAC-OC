@@ -35,4 +35,10 @@
  */
 @property (nonatomic, strong) Class cellType;
 
+@property (nonatomic, strong) UITableView *table;
+
+@property (nonatomic, assign) BOOL headLoading;
+
+@property (nonatomic, assign) BOOL footerLoading;
+
 @end

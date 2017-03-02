@@ -18,10 +18,6 @@
 
 @property (nonatomic, strong) RequestViewModel *requestViewModel;
 
-@property (nonatomic, strong) RACSignal *requestSignal;
-
-@property (nonatomic, assign) NSInteger countRefresh;
-
 @end
 
 @implementation RTableViewController
@@ -42,49 +38,19 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.countRefresh = 0;
     [self loadBaseView];
     
 }
 
 - (void)loadBaseView {
     
-    NSArray *select_parameters = @[@"阿", @"波", @"吃", @"对", @"恶", @"发", @"给", @"话", @"家"];
-    
     self.table = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.table.dataSource = self.requestViewModel;
     self.table.delegate = self.requestViewModel;
+    self.requestViewModel.table = self.table;
     [self.view addSubview:self.table];
     
-    @weakify(self);
-    self.table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        
-        @strongify(self);
-        self.countRefresh = 0;
-        self.requestViewModel.netParameters = [@{@"q": select_parameters[self.countRefresh]} mutableCopy];
-        self.requestSignal = [self.requestViewModel.requestCommand execute:nil];
-        [self.requestSignal subscribeNext:^(NSArray *x) {
-            self.requestViewModel.models = [x mutableCopy];
-            [self.table reloadData];
-            [self.table.mj_header endRefreshing];
-        }];
-        
-    }];
-    [self.table.mj_header beginRefreshing];
-    
-    self.table.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        
-        @strongify(self);
-        self.countRefresh += 1;
-        self.requestViewModel.netParameters = [@{@"q": select_parameters[self.countRefresh]} mutableCopy];
-        self.requestSignal = [self.requestViewModel.requestCommand execute:nil];
-        [self.requestSignal subscribeNext:^(NSArray *x) {
-            [self.requestViewModel.models addObjectsFromArray:x];
-            [self.table reloadData];
-            [self.table.mj_footer endRefreshing];
-        }];
-    }];
-
+    self.requestViewModel.headLoading = YES;
 }
 
 - (void)dealloc {
