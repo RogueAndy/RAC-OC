@@ -11,6 +11,7 @@
 		8205F4441E666D6F00D75D90 /* RBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8205F4431E666D6F00D75D90 /* RBaseModel.m */; };
 		8205F4471E666FA500D75D90 /* RBaseTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8205F4461E666FA500D75D90 /* RBaseTableViewModel.m */; };
 		8205F44A1E6697C400D75D90 /* RBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8205F4491E6697C400D75D90 /* RBaseViewModel.m */; };
+		8205F44D1E68089200D75D90 /* RTableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8205F44C1E68089200D75D90 /* RTableDetailViewController.m */; };
 		8231C4D71E5E7AEF00116950 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4D61E5E7AEF00116950 /* TwoViewController.m */; };
 		8231C4DA1E5E914200116950 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4D91E5E914200116950 /* LoginViewController.m */; };
 		8231C4E01E5E918F00116950 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8231C4DF1E5E918F00116950 /* LoginViewModel.m */; };
@@ -41,6 +42,8 @@
 		8205F4461E666FA500D75D90 /* RBaseTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBaseTableViewModel.m; sourceTree = "<group>"; };
 		8205F4481E6697C400D75D90 /* RBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBaseViewModel.h; sourceTree = "<group>"; };
 		8205F4491E6697C400D75D90 /* RBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBaseViewModel.m; sourceTree = "<group>"; };
+		8205F44B1E68089200D75D90 /* RTableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTableDetailViewController.h; sourceTree = "<group>"; };
+		8205F44C1E68089200D75D90 /* RTableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTableDetailViewController.m; sourceTree = "<group>"; };
 		8231C4D51E5E7AEF00116950 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		8231C4D61E5E7AEF00116950 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		8231C4D81E5E914200116950 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				8231C4D91E5E914200116950 /* LoginViewController.m */,
 				8231C4E41E5EAA4F00116950 /* RTableViewController.h */,
 				8231C4E51E5EAA4F00116950 /* RTableViewController.m */,
+				8205F44B1E68089200D75D90 /* RTableDetailViewController.h */,
+				8205F44C1E68089200D75D90 /* RTableDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				8231C4E61E5EAA4F00116950 /* RTableViewController.m in Sources */,
 				8205F4471E666FA500D75D90 /* RBaseTableViewModel.m in Sources */,
 				8231C4E31E5E91DA00116950 /* Account.m in Sources */,
+				8205F44D1E68089200D75D90 /* RTableDetailViewController.m in Sources */,
 				8231C4E01E5E918F00116950 /* LoginViewModel.m in Sources */,
 				82ABB9F61E54068B004F50D3 /* RBaseViewController.m in Sources */,
 				8231C4EC1E5EF6DF00116950 /* Book.m in Sources */,

@@ -18,7 +18,7 @@
 /**
  得到返回的数组
  */
-@property (nonatomic, strong) NSMutableArray *models;
+@property (nonatomic, strong, readonly) NSMutableArray *models;
 
 /**
  填入需要发送的参数
@@ -28,12 +28,12 @@
 /**
  记录 Model 数据类型, 尽量在 RequestViewModel 的 init 方法里，在 [super init] 之前写入
  */
-@property (nonatomic, strong) Class modelType;
+@property (nonatomic, strong, readonly) Class modelType;
 
 /**
  记录 TableViewCell 类型, 尽量在 RequestViewModel 的 init 方法里，在 [super init] 之前写入
  */
-@property (nonatomic, strong) Class cellType;
+@property (nonatomic, strong, readonly) Class cellType;
 
 @property (nonatomic, strong) UITableView *table;
 

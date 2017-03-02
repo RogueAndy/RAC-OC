@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) NSArray *select_parameters;
 
+@property (nonatomic, strong, readwrite) NSMutableArray *models;
+
 @end
 
 @implementation RBaseTableViewModel
@@ -103,6 +105,10 @@
 
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {}
+
+#pragma mark - 外部设置 Setting
+
 - (void)setHeadLoading:(BOOL)headLoading {
 
     _headLoading = headLoading;
@@ -146,7 +152,7 @@
             [self.table.mj_footer endRefreshing];
         }];
     }];
-
+    
 }
 
 @end

@@ -14,11 +14,19 @@
 
 @implementation RequestViewModel
 
+@synthesize cellType = _cellType, modelType = _modelType;
+
 - (instancetype)init {
     
-    self.cellType = [RTableViewCell class];
-    self.modelType = [Book class];
+    _cellType = [RTableViewCell class];
+    _modelType = [Book class];
     return [super init];
+
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 
 }
 
