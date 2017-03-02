@@ -6,12 +6,14 @@
 //  Copyright © 2017年 RogueAndy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "RBaseViewModel.h"
 #import "Account.h"
 
 @class RACSignal, RACCommand;
 
-@interface LoginViewModel : NSObject
+// 在获取网络数据的时候，如果需要显示 MBProgressHUD，那么需要调用 [RACCommand execute:nil] 传入参数为 view,否则不会调用 MBProgressHUD
+
+@interface LoginViewModel : RBaseViewModel
 
 @property (nonatomic, strong) Account *account;
 

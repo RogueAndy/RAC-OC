@@ -9,6 +9,7 @@
 #import "TwoViewController.h"
 #import "ReactiveCocoa.h"
 #import "RTableViewController.h"
+#import "LoginViewController.h"
 
 @interface TwoViewController ()
 
@@ -31,7 +32,8 @@
 
 - (void)notice:(UIButton *)sender {
 
-    RTableViewController *vc = [[RTableViewController alloc] init];
+//    RTableViewController *vc = [[RTableViewController alloc] init];
+    LoginViewController *vc = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 
 }

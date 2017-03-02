@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
 #import "ReactiveCocoa.h"
+#import "MBProgressHUD.h"
 
 @interface LoginViewController ()
 
@@ -53,7 +54,7 @@
     @weakify(self);
     [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self);
-        [self.loginViewModel.loginCommand execute:nil];
+        [self.loginViewModel.loginCommand execute:self.view];
     }];
 }
 
