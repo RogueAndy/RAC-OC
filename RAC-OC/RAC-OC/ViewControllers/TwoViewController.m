@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor colorWithRed:220/255.f green:220/255.f blue:220/255.f alpha:1];
     
     UIButton *sender = [UIButton buttonWithType:UIButtonTypeCustom];
     sender.frame = CGRectMake(20, 100, self.view.frame.size.width - 40, 40);
@@ -32,8 +32,8 @@
 
 - (void)notice:(UIButton *)sender {
 
-    RTableViewController *vc = [[RTableViewController alloc] init];
-//    LoginViewController *vc = [[LoginViewController alloc] init];
+//    RTableViewController *vc = [[RTableViewController alloc] init];
+    LoginViewController *vc = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 
 }

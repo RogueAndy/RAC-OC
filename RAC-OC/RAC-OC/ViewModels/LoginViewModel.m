@@ -54,12 +54,16 @@
                                                return @(account.length && pwd.length);
                                            }];
     
+    @weakify(self);
     _loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         NSLog(@"点击了登录");
         self.progressShowInView = input;
+        @strongify(self);
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [subscriber sendNext:@"登陆成功"];
+//                MBProgressHUD *weakSelf = [MBProgressHUD showHUDAddedTo:self.progressShowInView animated:YES];
+//                weakSelf.label.text = @"登陆完成";
                 [subscriber sendCompleted];
             });
             
